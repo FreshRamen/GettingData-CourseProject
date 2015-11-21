@@ -26,7 +26,7 @@ The code `run_analysis.R` creates two data tables:
 1. `DT`
 Contains all the data without further aggregation. It is not necessarily tidy and the records are not unique. Note that the question did not specify for it to be tidy. 
 2. `DT.mean`
-Contains average observations for each Subject-Activity-Feature-Dimension combination, recording the mean (**mean()**) and standard deviation (**std()**) in separate columns. This dataset is tidy, as the task specifies. 
+Contains average observations for each Subject-Activity-Feature-Dimension combination, recording the mean (**mean()**) and standard deviation (**std()**) in separate columns. This dataset is tidy, as the task specifies. DT.mean is exported to `"Tidy Dataset.txt"` in the working directory.
 
 `run_analysis.R` requires the package `data.table` to be installed in version `1.9.6`.
 
