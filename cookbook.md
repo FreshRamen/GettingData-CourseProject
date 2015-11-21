@@ -15,11 +15,9 @@ Values in the tidy dataset created for step 5 (`DT.mean` in memory, or `"Tidy Da
 
 ## Alterations compared to source
 * The original **Feature** had (at most) three expressions pasted together, separated by "-". For readability, it was split up into three columns, at the "-":
-
- ** **Feature** representing the first argument
- ** **Method** representing the second argument
- ** **Dimension** representing the third argument
-
+  - **Feature** representing the first argument
+  - **Method** representing the second argument
+  - **Dimension** representing the third argument
 * A column **Dataset** was added, identifying subjects who were in either the *test* or *train* sample.
 
 ## Reproducability
