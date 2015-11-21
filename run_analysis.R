@@ -39,6 +39,7 @@ files <- files[ # Exclude some files
 # files contains paths (full.names=T) and the file ending. 
 # The code below cleans that up. 
 DT.names <- strsplit(files, "/") # Split path at "/"
+# Line 41 has to be changed on windows, where the path looks different than on unix
 DT.names <- unlist(lapply(DT.names, tail, 1)) # Extract last element
 DT.names <- gsub(".txt","",DT.names) # Remove ".txt"
 
