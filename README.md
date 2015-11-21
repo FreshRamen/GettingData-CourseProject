@@ -7,3 +7,5 @@ It contains the following files:
 * This readme file (`README.md`)
 * An R-script, `run_analysis.R`, which creates a tidy dataset
 * `cookbook.md`, a markdown file detailing the tidy data file
+
+The script requires the package `data.table` to be installed.
