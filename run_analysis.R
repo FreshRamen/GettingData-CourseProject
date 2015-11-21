@@ -143,5 +143,10 @@ DT.mean <- dcast.data.table(
 	value.var = "V1"
 )
 
+############################
+### Export tidy data set ###
+############################
+
+
 
 
