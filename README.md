@@ -5,7 +5,7 @@ This repo contains FreshRamen's project for the course *Getting and Cleaning Dat
 
 It contains the following files: 
 * This readme file (`README.md`)
-* An R-script, `run_analysis.R`, which creates a tidy dataset
+* An R-script, `run_analysis.R`, which creates the two datasets
 * `cookbook.md`, a markdown file detailing the tidy data file
 
 The script requires the package `data.table` to be installed.
