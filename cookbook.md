@@ -7,7 +7,7 @@ The dataset represents a tidy version of the *Human Activity Recognition Using S
 
 30 subjects participated in the experiment (identified by variable **Subject**). 30% of whom were sorted into a *test* sample and 70% into a *training* sample, which is captured by the variable **Dataset**. Each subject performed an activity while wearing the smartphone device, which is identified by the variable **Activity**.
 
-The original dataset moreover provided various measures and aggregations. These are provided in the variables. **Feature**, **Method**, and **Dimension**. **Dimension** takes on the values X, Y or Z, reflecting the dimensions in which data was recorded. . The **Feature** is an identifier placed by the authors, identifying the type of sensor used, among other things. 
+The original dataset moreover provided various measures and aggregations. These are provided in the variables **Feature**, **Method**, and **Dimension**. **Dimension** takes on the values X, Y or Z, reflecting the dimensions in which data was recorded. . The **Feature** is an identifier placed by the authors, identifying the type of sensor used, among other things. 
 
 From the original source:
 
@@ -17,7 +17,7 @@ In this dataset, **Method** is the aggregation method chosen by the authors of t
 
 Values in the tidy dataset created for step 5 (`DT.mean` in memory, or `"Tidy Dataset.txt"` after exporting), are presented in two columns: **mean()** and **std()**, representing the average means and standard deviations of the orignal dataset, by Subject, Activity, Feature, and Dimension. 
 
-The values are normalized, please see the original dataset manuals provided above for additional info on measurement. 
+The values are normalized, please see the original dataset manuals provided as well as the quote above for additional info on measurement. 
 
 
 
