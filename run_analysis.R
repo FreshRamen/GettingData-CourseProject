@@ -72,7 +72,7 @@ tables(order.col = "NROW")
 test <- merge(y_test, activity_labels, by = "V1")
 train <- merge(y_train, activity_labels, by = "V1")
 
-## Bind X and Y
+## Bind the subject, Y (now activity labels) and X
 test <- cbind(subject_test, test[, V2], X_test)
 train <- cbind(subject_train, train[, V2], X_train)
 
