@@ -8,7 +8,6 @@
 
 ## Packages
 library(data.table) # Requires 1.9.6, check packageVersion("data.table")
-#library(reshape2)
 
 ## Directories
 path.root <- "~/Dropbox/PhD/Coursera Data Science/3 Getting and Cleaning Data/Course Project"
@@ -143,7 +142,6 @@ DT.mean <- dcast.data.table(
 	Subject + Activity + Dataset + Feature + Dimension ~ Method,
 	value.var = "V1"
 )
-
 
 
 
