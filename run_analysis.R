@@ -10,10 +10,9 @@
 library(data.table) # Requires 1.9.6, check packageVersion("data.table")
 
 ## Directories
-path.root <- "~/Dropbox/PhD/Coursera Data Science/3 Getting and Cleaning Data/Course Project"
 path.data <- file.path(path.root,"UCI HAR Dataset")
 
-setwd(path.root)
+setwd(path.data)
 
 
 #############################
@@ -147,6 +146,6 @@ DT.mean <- dcast.data.table(
 ### Export tidy data set ###
 ############################
 
-
+write.table(DT.mean, file = "Tidy Dataset.txt")
 
 
