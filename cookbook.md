@@ -3,13 +3,19 @@ Cookbook for tidy dataset
 
 The dataset represents a tidy version of the *Human Activity Recognition Using Smartphones Dataset V1*, available via [cloudfront]. Additional details regarding the dataset are provided by [UCL Irvine]. 
 
+## Overview of dataset
+
 30 subjects participated in the experiment (identified by variable **Subject**). 30% of whome were sorted into a *test* sample and 70% into a *training* sample, which is captured by the variable **Dataset**. Each subject performed an activity while wearing the smartphone devide, which is identified by the variable **Activity**.
 
-The original dataset moreover provided various measures and aggregations. These are provided in the variables. **Feature**, **Method**, and **Dimension**
+The original dataset moreover provided various measures and aggregations. These are provided in the variables. **Feature**, **Method**, and **Dimension**. **Dimension** takes on the values X, Y or Z, reflecting the dimensions in which data was recorded. **Method** is the aggregation method chosen by the authors of the dataset, for example `mean()` or `str()`. The **Feature** is an identifier placed by the authors, identifying the type of sensor used, among other things. 
 
+## Reproducability
+The code `run_analysis()` creates two data tables: 
 
-There are two folders containing experiment data, one for test data and one for experimental data. Each row in each of the files identifies an observation per subject. The subject is identified via the file subject_train.
-
+1. `DT`
+Contains all the data without further aggregation. It is not necessarily tidy and the records are not unique. Note that the question did not specify for it to be tidy. 
+2. `DT.mean`
+Contains average observations for each Subject-Activity-Feature-Dimension combination, recording the mean (**mean()**) and standard deviation (**std()**) in separate columns. This dataset is tidy, as the task specified. 
 
 [cloudfront]: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
