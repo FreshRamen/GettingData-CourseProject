@@ -11,7 +11,11 @@ The original dataset moreover provided various measures and aggregations. These 
 
 **Method** is the aggregation method chosen by the authors of the dataset, for example `mean()` or `str()`. It only exists in the non-tidy dataset created for steps 1-4.
 
-Values in the tidy dataset created for step 5 (`DT.mean` in memory, or `"Tidy Dataset.txt"` after exporting), are presented in two columns: **mean()** and **std()**, representing the average means and standard deviations of the orignal dataset, by Subject, Activity, Feature, and Dimension. Both are normalized, please see the original dataset manuals provided above for additional info on measurement. 
+Values in the tidy dataset created for step 5 (`DT.mean` in memory, or `"Tidy Dataset.txt"` after exporting), are presented in two columns: **mean()** and **std()**, representing the average means and standard deviations of the orignal dataset, by Subject, Activity, Feature, and Dimension. 
+
+The values are normalized, please see the original dataset manuals provided above for additional info on measurement. 
+
+> The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
 ## Alterations compared to source
 * The original **Feature** had (at most) three expressions pasted together, separated by "-". For readability, it was split up into three columns, at the "-":
