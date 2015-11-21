@@ -10,4 +10,4 @@ It contains the following files:
 
 The script requires the package `data.table` to be installed. 
 
-For any other instructions, please read the comments in the script itself. All the steps performed are explained within the script.
+For detailed instructions, please read the comments in the script itself. All the steps performed are explained within the script.
