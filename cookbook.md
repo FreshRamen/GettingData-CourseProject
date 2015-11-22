@@ -21,7 +21,6 @@ The values are normalized, please see the original dataset manuals provided as w
 
 The data is in long format.
 
-
 ## Alterations compared to source
 * The original **Feature** had (at most) three expressions pasted together, separated by "-". For readability, it was split up into three columns, at the "-":
   - **Feature** representing the first argument

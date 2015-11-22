@@ -88,7 +88,7 @@ train[, Dataset := "Train"]
 # This is essentially task (1)
 DT <- rbindlist(list(test,train), use.names = TRUE)
 
-## Create a tidy panel dataset
+## Create a cleaner panel dataset
 # I'd rather have only values in one column, and another column to
 # idenfity the Feature. I call this column "FeatureOrig" because 
 # I will split it up for readability in the next step.
@@ -140,7 +140,7 @@ DT.mean <- DT[
 # This seems tidier to me.
 DT.mean <- dcast.data.table(
 	DT.mean, 
-	Subject + Activity + Dataset + Feature + Dimension ~ Method,
+	Subject + Activity + Dataset + Feature + Dimension ~ Method ,
 	value.var = "V1"
 )
 
