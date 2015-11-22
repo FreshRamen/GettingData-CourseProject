@@ -19,6 +19,7 @@ Values in the tidy dataset created for step 5 (`DT.mean` in memory, or `"Tidy Da
 
 The values are normalized, please see the original dataset manuals provided as well as the quote above for additional info on measurement. 
 
+The data is in long format.
 
 
 ## Alterations compared to source
